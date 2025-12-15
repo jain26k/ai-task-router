@@ -229,7 +229,7 @@
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ payload: task })
+                    body: JSON.stringify({ payload: { text: task }}
                 });
                 
                 const result = await response.text();
